@@ -100,7 +100,7 @@
 
     <div id="response"></div>
 
-    <a href="https://whatsapp.com/channel/0029VajZpqL7T8bRvUqAU23A" target="_blank">
+    <a href="https://whatsapp.com/channel/0029VavHzv259PwTIz1XxJ09" target="_blank">
       <button class="btn">💬 Contact Developer</button>
     </a>
   </div>
@@ -116,7 +116,7 @@
         return;
       }
 
-      fetch(`ENTER YOUR API HERE ${encodeURIComponent(phone)}`)
+      fetch(`https://legendxdata.site/Api/simdata.php?phone= ${encodeURIComponent(phone)}`)
         .then(res => res.json())
         .then(data => {
           if (Array.isArray(data) && data.length > 0) {
