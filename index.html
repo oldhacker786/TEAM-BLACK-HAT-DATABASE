@@ -116,7 +116,7 @@
         return;
       }
 
-      fetch(`https://legendxdata.site/Api/simdata.php?phone= ${encodeURIComponent(phone)}`)
+      fetch(`https://legendxdata.site/Api/simdata.php?phone=${encodeURIComponent(phone)}`)
         .then(res => res.json())
         .then(data => {
           if (Array.isArray(data) && data.length > 0) {
